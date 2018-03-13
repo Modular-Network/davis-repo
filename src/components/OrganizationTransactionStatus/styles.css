@@ -1,0 +1,110 @@
+.card {
+    width: 380px;
+    height: 450px;
+    border-radius: 5px !important;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.box {
+    margin: 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+  
+.init {
+      text-align: center;
+      background: #fee6e8;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+      border-radius: 0px 0px 5px 5px;
+      grid-row: 1;
+      grid-column: 2/4;
+      width: 170px;
+      height: 30px;
+      margin-left: 10px;
+}
+  
+.pending {
+    padding: 0;
+    margin: 0;
+    background: yellow;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+  
+.transaction {
+    text-align: center;
+    grid-row: 2/6;
+    grid-column: 1/5;
+}
+
+.icons {
+    text-align: center;
+    grid-row: 6/7;
+    grid-column: 1/5;
+}
+
+.sigvalue {
+    position: fixed;
+    padding: 15px 0px 0px 20px;
+}
+
+.amount {
+    font-size: 3rem;
+    padding: 25px;
+    margin: 0;
+    padding: 15px;
+}
+
+.reason {
+    border-radius: 5px;
+    margin: 5px;
+    height: 135px;
+    width: 370px;
+    padding: 8px;
+    text-align: justify;
+    background-color: #fee6e8;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+  
+.icons {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.icons > div > i, p {
+    padding: 5px;
+    margin: 0;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin: 5px 11px;
+    background: linear-gradient(229deg, rgb(214, 132, 38) 0%, #F9505C 100%);
+}
+
+.circle > p {
+    font-size: 2rem;
+    text-align: center;
+}
+  
+.level {
+    display: inline-flex;
+    justify-content: space-around;
+    grid-row: 7/8;
+    grid-column: 1/5;
+}
+
+input[type=submit] {
+    width: 100%;
+    background: linear-gradient(229deg, #F59F3A 0%, #F9505C 100%);
+    color: white;
+    padding: 14px 20px;
+    margin: 10px 0 0 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.fieldTitle {
+  padding: .5rem;
+}
+
+.actuallyButtons {
+  composes: centered from './placement.css';
+  margin: 3em;
+}

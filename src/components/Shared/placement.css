@@ -1,0 +1,24 @@
+.centered {
+  text-align: center;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.clearFix::after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.onboardDialogue {
+  height: 15.7rem;
+  width: 57.5rem;
+  position: fixed;
+  left:5.83%;
+}

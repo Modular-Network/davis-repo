@@ -1,0 +1,33 @@
+.base {
+  display: fixed;
+}
+
+@-webkit-keyframes pulse {
+  0% { box-shadow:0 0 10px 5px #fff, inset 0 0 10px 5px #fff; }
+  50% { box-shadow:0 0 16px #fff, inset 0 0 14px #fff; }
+  100% { box-shadow:0 0 10px 5px #fff, inset 0 0 10px 5px #fff; }
+}
+
+.circle {
+  display: inline-block;
+  background-color: #fff;
+  width:13px;
+  height:13px;
+  border-radius:50px;
+  margin-right: 4rem;
+}
+
+.circle:last-child {
+  margin-right: 0px;
+}
+
+.lit {
+  composes: circle;
+  box-shadow: 0 0 10px 5px #fff, inset 0 0 10px 5px #fff;
+  animation: pulse 4s linear 1s infinite;
+}
+
+.grey {
+  composes: circle;
+  opacity: .5;
+}

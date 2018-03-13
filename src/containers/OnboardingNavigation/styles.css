@@ -1,0 +1,22 @@
+.base {
+  position: fixed;
+  top: 91%;
+  width: 88%;
+  margin: 0 0 0 7vw;
+  text-align: center;
+}
+
+.next {
+  composes: inlineBlock from 'components/Shared/placement.css';
+  position: relative;
+  bottom: 1.6rem;
+  float: right;
+  cursor: pointer;
+  border-radius:50px;
+  -webkit-transition: .3s ease-in-out;
+}
+
+.next:hover {
+  background-color: white;
+  box-shadow:0 0 10px #fff, inset 0 0 7px #fff;
+}

@@ -1,0 +1,46 @@
+@-webkit-keyframes showUp {
+	0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.base {
+	height: 15.7rem;
+	width: 55.5rem;
+	position: fixed;
+	left:5.83%;
+	-webkit-transition: top 2s, opacity 2s;
+	top: 42.83%;
+}
+
+.hello {
+	color: #FFFFFF;
+	font-family: "Open Sans";
+	font-size: 4.8rem;
+	line-height: 6.2rem;
+}
+
+.lets {
+	position: relative;
+	top: 2.8rem;
+	left: 0.5rem;
+	height: 3.0rem;
+	width: 30rem;
+	color: #FFFFFF;
+	font-family: "Open Sans";
+	font-size: 3.0rem;
+	font-weight: lighter;
+	line-height: 6.2rem;
+	cursor: pointer;
+}
+
+.blossom {
+	composes: hello;
+	composes: inlineBlock from 'components/Shared/placement.css';
+}
+
+.logo {
+	composes: blossom;
+	position: relative;
+	top: 8px;
+	left: 18px;
+}

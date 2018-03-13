@@ -1,0 +1,192 @@
+:root {
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 50%;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+.base {
+  position: relative;
+  margin: -8px;
+  height: 100vh;
+  width: 100vw;
+  border: 3px solid #F8684A;
+  background: linear-gradient(229deg, #F59F3A 0%, #F9505C 100%);
+  transition: .3s ease-in-out;
+}
+
+.title {
+  background-color: darkgrey;
+  padding: 2em;
+  border-radius: 0.5em;
+  grid-column: 1/3;
+  opacity: 0.3;
+}
+
+.spore {
+  position: fixed;
+  top: 18.25%;
+  left: 6%;
+}
+
+
+.skip {
+  background-color: darkgrey;
+  padding: 2em;
+  border-radius: 0.5em;
+  grid-column: 1/3;
+  opacity: 0.3;
+}
+
+
+.bottom {
+  margin: auto;
+  border-radius: 0.5em;
+  grid-column: 3/4;
+}
+
+.next {
+  background-color: darkgrey;
+  padding: 2em;
+  border-radius: 0.5em;
+  grid-column: 4/6;
+  opacity: 0.3;
+}
+
+.treeImg {
+  display: inline-block;
+  margin: 5vh 0 0 45vw;
+}
+
+.pager > * {
+  padding: .5vh;
+  opacity: 0.6;
+}
+
+.welcome-component {
+  margin-left: 3vh;
+  padding: 2em;
+  border-radius: 0.5em;
+  grid-column: 1/3;
+}
+
+
+.let-s-get-started {
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.arrows {
+  display: flex;
+  grid-column: 1/3;
+}
+
+.arrow-left {
+  flex: 1;
+  text-align: left;
+  margin-left: 4vh;
+  background: transparent;
+  border: none;
+  opacity: 0.7;
+}
+
+.arrow-right {
+  flex: 1;
+  text-align: right;
+  margin-right: 3vh;
+  margin-left: 45vh;
+  background: transparent;
+  border: none;
+  opacity: 0.7;
+}
+
+.arrow-right:hover, .arrow-left:hover {
+  color: gold;
+}
+
+.material-icons.md-60 {
+  font-size: 60px;
+}
+
+.gold {
+  color: gold
+}
+
+.white {
+  color: white
+}
+
+.green {
+  color: green;
+}
+
+.grey {
+  color: grey
+}
+
+.threshold-text {
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+  font-size: 2vh;
+}
+
+.secure-text {
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+  font-size: 2vh;
+}
+
+.threshold-value {
+  color: #FFFFFF;
+  font-family: 'Open Sans';
+  font-size: 8vh;
+  margin: auto;
+}
+
+.submit {
+  margin: 3vh;
+  margin-left: 45vh;
+  width: 9vh;
+  height: 3vh;
+  border-radius: 20px;
+}
+
+.submit:hover {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.secure-container {
+  display: flex;
+}
+
+.yes, .no {
+  flex: 1;
+  margin: 2em;
+}
+
+.actuallyno {
+  margin: 3em;
+}
+
+.actuallyyes {
+  margin: 3em;
+}
+
+.logo{
+  position: fixed;
+  top: 6%;
+  left: 6%;
+}

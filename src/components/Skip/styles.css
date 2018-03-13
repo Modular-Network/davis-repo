@@ -1,0 +1,33 @@
+.base {
+	composes: alignLeft from 'components/Shared/placement.css';
+}
+
+.skip {
+	composes: inlineBlock from 'components/Shared/placement.css';
+	height: 1rem;
+	width: 8.7rem;
+	color: #FFFFFF;
+	font-family: "Open Sans";
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 0;
+}
+
+.continue {
+	position: relative;
+	top: 15px;
+	height: .7rem;
+	width: 35rem;
+	color: #FFFFFF;
+	font-family: "Open Sans";
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 0;
+}
+
+.question {
+	composes: inlineBlock from 'components/Shared/placement.css';
+	position: relative;
+	top: 2px;
+	left: 4px;
+}

@@ -1,0 +1,46 @@
+.base {
+  display: inline-flex;
+  color: #FFFFFF;
+	font-family: "Open Sans";
+	font-size: 11px;
+	font-weight: bold;
+  border: none;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.base > div {
+  padding-right: 20px;
+}
+
+.line {
+  height: 2px;
+  background: #fff;
+  border: none;
+  margin-top: 2%;
+  transition: .3s ease-in-out;
+}
+
+.lUser {
+  composes: line;
+  margin-left: 25px;
+  width: 60px;
+}
+
+.lEmail {
+  composes: line;
+  margin-left: 103px;
+  width: 82px;
+}
+
+.lPass {
+  composes: line;
+  margin-left: 205px;
+  width: 60px;
+}
+
+.lPhone {
+  composes: line;
+  margin-left: 285px;
+  width: 85px;
+}

@@ -1,0 +1,169 @@
+{
+  "name": "blosym-canopy",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "7.1.4",
+    "axios": "0.17.1",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.0.0",
+    "babel-jest": "21.0.2",
+    "babel-loader": "7.1.2",
+    "babel-preset-react-app": "3.0.2",
+    "babel-runtime": "6.26.0",
+    "caniuse-lite": "1.0.30000783",
+    "case-sensitive-paths-webpack-plugin": "2.1.1",
+    "chalk": "2.1.0",
+    "crc": "3.5.0",
+    "css-loader": "0.28.7",
+    "cssnano": "3.10.0",
+    "dotenv": "4.0.0",
+    "electron-to-chromium": "1.3.28",
+    "enhanced-resolve": "4.0.0-beta.2",
+    "enzyme": "3.1.1",
+    "enzyme-adapter-react-16": "1.0.4",
+    "escape-string-regexp": "1.0.5",
+    "eslint": "4.7.0",
+    "eslint-config-nw-react-app": "1.0.1",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-flowtype": "2.35.1",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.3.0",
+    "ethereumjs-abi": "0.6.5",
+    "ethereumjs-tx": "1.3.3",
+    "extract-text-webpack-plugin": "3.0.0",
+    "file-loader": "0.11.2",
+    "fs-extra": "4.0.2",
+    "growly": "1.3.0",
+    "html-webpack-plugin": "2.30.1",
+    "is-ci": "1.0.10",
+    "is-number": "4.0.0",
+    "isexe": "2.0.0",
+    "jest": "21.2.1",
+    "jest-cli": "20.0.4",
+    "jsdom": "11.5.1",
+    "lodash": "4.17.4",
+    "material-design-icons": "3.0.1",
+    "material-ui": "0.19.4",
+    "moment": "2.20.1",
+    "object-assign": "4.1.1",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "postcss-loader": "2.0.6",
+    "promise": "8.0.1",
+    "prop-types": "15.6.0",
+    "react": "16.1.1",
+    "react-dev-utils": "4.0.1",
+    "react-dom": "16.1.1",
+    "react-hot-loader": "3.1.1",
+    "react-material-ui-form-validator": "1.1.0",
+    "react-redux": "5.0.6",
+    "react-router-dom": "4.2.2",
+    "react-scripts": "1.0.17",
+    "redux": "3.6.0",
+    "redux-actions": "1.2.2",
+    "redux-pender": "1.1.13",
+    "redux-promise-middleware": "4.2.0",
+    "redux-thunk": "2.2.0",
+    "scrypt": "6.0.3",
+    "sha3": "1.2.0",
+    "socket.io-client": "2.0.4",
+    "style-loader": "0.18.2",
+    "sw-precache-webpack-plugin": "0.11.4",
+    "underscore": "1.8.3",
+    "url-loader": "0.5.9",
+    "web3": "0.20.2",
+    "webpack": "3.6.0",
+    "webpack-dev-server": "2.8.2",
+    "webpack-manifest-plugin": "1.3.2",
+    "whatwg-fetch": "2.0.3"
+  },
+  "main": "index.html",
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "react-scripts test --env=jsdom",
+    "test-modules": "./node_modules/.bin/mocha --compilers js:babel-core/register --exit src/lib/blosym-modules/test/testTxSender.js"
+  },
+  "window": {
+    "title": "Blossom",
+    "toolbar": true,
+    "width": 1680,
+    "height": 1050,
+    "min_width": 1280,
+    "min_height": 720
+  },
+  "nwBuilder": {
+    "platforms": [
+      "osx64",
+      "win64"
+    ],
+    "version": "latest",
+    "buildDir": "./build",
+    "cacheDir": "./cache"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-airbnb": "2.4.0",
+    "babel-preset-es2015-mod": "6.6.0",
+    "babel-preset-es3": "1.0.1",
+    "babel-preset-latest": "6.24.1",
+    "binary-loader": "0.0.1",
+    "mocha": "4.0.1",
+    "moxios": "0.4.0",
+    "nw-builder": "3.5.1",
+    "react": "16.1.1",
+    "react-dom": "16.1.1",
+    "react-image-resizer": "1.2.0",
+    "react-test-renderer": "16.1.1",
+    "react-transition-group": "2.2.1",
+    "redux-logger": "3.0.6",
+    "redux-mock-store": "1.3.0",
+    "request": "2.83.0",
+    "shelljs": "0.7.8",
+    "should": "13.1.3",
+    "socket.io": "2.0.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/registerServiceWorker.js",
+      "!src/setupTests.js",
+      "!src/redux/configureStore.js",
+      "!src/temp"
+    ],
+    "setupFiles": [
+      "<rootDir>/config/polyfills.js"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.js?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).js?(x)"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.(js|jsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "web.js",
+      "js",
+      "json",
+      "web.jsx",
+      "jsx",
+      "node"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "nw-react-app"
+  }
+}
